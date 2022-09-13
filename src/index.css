@@ -1,3 +1,19 @@
 body {
   background-color: blanchedalmond;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.header {
+  text-align: center;
+  background-color: cadetblue;
+  height: 80px;
+}
+.quote-box {
+  background-color: sandybrown;
+  width: 60%;
+  height: 250px;
+  border-radius: 20px;
+  margin: 0 auto;
 }
