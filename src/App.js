@@ -1,15 +1,6 @@
 import axios from "axios";
 
 function App() {
-  const quote = () => {
-    axios.get("https://api.quotable.io/random").then(function (response) {
-      // handle success
-      console.log(response.data.content);
-    });
-  };
-
-  quote();
-
   return (
     <div className="App">
       <div className="header">
