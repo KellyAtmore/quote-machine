@@ -7,6 +7,10 @@ function App() {
   );
   const [author, setAuthor] = useState("Nelson Mandela");
 
+  const copy = (quote, author) => {
+    navigator.clipboard.writeText(quote + author);
+  };
+
   const changeQuote = () => {
     axios
       .get("https://api.quotable.io/random")
@@ -29,6 +33,16 @@ function App() {
         <h1>Quote Machine</h1>
       </div>
       <div className="quote-box">
+        <div className="copy-box">
+          <a
+            onClick={() => {
+              copy(quote, author);
+            }}
+          >
+            <i className="fa-regular fa-copy"></i>
+          </a>
+        </div>
+
         <p className="quote-text"> " {quote} " </p>
         <p className="author">{author}</p>
         <div className="btn-container">

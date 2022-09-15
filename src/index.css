@@ -20,6 +20,22 @@ h1 {
   height: 80px;
   margin-bottom: 40px;
 }
+
+.copy-box {
+  display: flex;
+  justify-content: end;
+}
+
+.fa-regular {
+  color: #fa8072;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.fa-regular:hover {
+  cursor: pointer;
+}
+
 .quote-text {
   margin-bottom: 10px;
 }
@@ -29,11 +45,11 @@ h1 {
   font-style: italic;
   font-weight: 300;
   text-align: right;
-  color: salmon;
+  color: #fa8072;
 }
 .quote-box {
   background-color: none;
-  width: 50%;
+  width: 40%;
   height: 250px;
   background-color: bisque;
   margin: 0 auto;
