@@ -2,10 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [quote, setQuote] = useState([
-    "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "Nelson Mandela",
-  ]);
+  const [quote, setQuote] = useState(
+    "The greatest glory in living lies not in never falling, but in rising every time we fall."
+  );
+  const [author, setAuthor] = useState("Nelson Mandela");
 
   const changeQuote = () => {
     axios
@@ -15,7 +15,8 @@ function App() {
         const author = res.data.author;
         console.log("this is data", data, author);
 
-        setQuote([data, author]);
+        setQuote(data);
+        setAuthor(author);
       })
       .catch((error) => {
         console.log(error);
@@ -25,12 +26,13 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <p>Quote Machine</p>
+        <h1>Quote Machine</h1>
       </div>
       <div className="quote-box">
-        <p className="quote-text">{quote}</p>
+        <p className="quote-text"> {quote} </p>
+        <p>{author}</p>
+        <button onClick={() => changeQuote()}>change quote</button>
       </div>
-      <button onClick={() => changeQuote()}>change quote</button>
     </div>
   );
 }
