@@ -2,14 +2,20 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [quote, setQuote] = useState("this is intitial quote");
+  const [quote, setQuote] = useState([
+    "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "Nelson Mandela",
+  ]);
 
   const changeQuote = () => {
     axios
       .get("https://api.quotable.io/random")
       .then((res) => {
         const data = res.data.content;
-        setQuote(data);
+        const author = res.data.author;
+        console.log("this is data", data, author);
+
+        setQuote([data, author]);
       })
       .catch((error) => {
         console.log(error);
