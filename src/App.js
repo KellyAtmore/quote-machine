@@ -29,9 +29,11 @@ function App() {
         <h1>Quote Machine</h1>
       </div>
       <div className="quote-box">
-        <p className="quote-text"> {quote} </p>
-        <p>{author}</p>
-        <button onClick={() => changeQuote()}>change quote</button>
+        <p className="quote-text"> " {quote} " </p>
+        <p className="author">{author}</p>
+        <div className="btn-container">
+          <button onClick={() => changeQuote()}>New Quote</button>
+        </div>
       </div>
     </div>
   );
