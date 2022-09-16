@@ -29,22 +29,21 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">
-        <h1>Quote Machine</h1>
-      </div>
+      <div className="header">{/* <h1>Quote Machine</h1> */}</div>
       <div className="quote-box">
-        <div className="copy-box">
+        <div className="copy-box" id="copy-box">
           <a
             onClick={() => {
               copy(quote, author);
             }}
           >
-            <i className="fa-regular fa-copy"></i>
+            <i class="fa-solid fa-copy"></i>
+            {/* <i className="fa-regular fa-copy"></i> */}
           </a>
         </div>
 
         <p className="quote-text"> " {quote} " </p>
-        <p className="author">{author}</p>
+        <p className="author">- {author} -</p>
         <div className="btn-container">
           <button onClick={() => changeQuote()}>New Quote</button>
         </div>

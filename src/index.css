@@ -26,18 +26,25 @@ h1 {
   justify-content: end;
 }
 
-.fa-regular {
+.fa-solid {
   color: #fa8072;
   font-size: 25px;
   font-weight: 200;
 }
 
-.fa-regular:hover {
+.fa-solid:hover {
   cursor: pointer;
+  color: #f96959;
+}
+
+.fa-solid:active {
+  scale: 1.5;
+  transition: all 0.3s ease;
 }
 
 .quote-text {
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .author {
@@ -50,7 +57,7 @@ h1 {
 .quote-box {
   background-color: none;
   width: 40%;
-  height: 250px;
+  height: auto;
   background-color: bisque;
   margin: 0 auto;
   padding: 30px;
@@ -69,9 +76,15 @@ button {
   width: 150px;
   margin-top: 40px;
   font-size: 1.2rem;
+
+  background: linear-gradient(to left, blanchedalmond 50%, salmon 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
 }
 
 button:hover {
   cursor: pointer;
   background-color: salmon;
+  background-position: left;
+  border-radius: 10px;
 }
