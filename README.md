@@ -4,11 +4,7 @@ Random quote generator
 
 [Live App](https://guileless-puffpuff-ea6166.netlify.app/) 🥳
 
-![](https://github.com/KellyAtmore/very_good_albums/blob/main/client/docs/home.png)
-
-![](https://github.com/KellyAtmore/very_good_albums/blob/main/client/docs/albums.png)
-
-![](https://github.com/KellyAtmore/very_good_albums/blob/main/client/docs/albumPage.png)
+![](https://github.com/KellyAtmore/quote-machine/blob/main/public/docs/quote-home.png))
 
 ## ⚙ Tech Stack
 
